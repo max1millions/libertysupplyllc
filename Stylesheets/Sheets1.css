@@ -1,0 +1,154 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 3rem;  
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            z-index: 5;
+            padding: 40px;
+        }
+        header {
+            background: #00274D;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #00509E;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        section {
+            padding: 20px;
+            background: white;
+            margin: 20px 0;
+            border-radius: 5px;
+            transition: transform 0.8s ease-in-out;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00509E;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        .download-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .download-button:hover {
+            background-color: #003366;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #00274D;
+            color: white;
+            margin-top: 20px;
+        }
+        .services, .compliance {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-item, .client-item {
+            flex: 1 1 30%;
+            background: #e3e3e3;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.7s;
+        }
+        .service-item:hover, .client-item:hover {
+            background: #d1d1d1;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease-out, transform 0.9s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .military-image {
+            width: 80%;
+            max-width: 870px;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; /* Full screen height */
+            position: relative;
+            overflow: hidden;
+        }
+        .image-certifications {
+            margin: 25px;;
+        }
+        .contact-info {
+            background: #00509E;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #ffdf10;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        header h1 a {
+            text-decoration: none; /* Remove underline */
+            color: inherit; /* Inherit text color from parent */
+            cursor: pointer; /* Show clickable cursor */
+        }
+
+        header h1 a:hover {
+            opacity: 0.8; /* Slight fade effect on hover */
+        }
+        .pre-text {
+            white-space: pre;
+        }
