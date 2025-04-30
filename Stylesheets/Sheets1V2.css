@@ -106,9 +106,9 @@ footer {
     transform: translateY(0);
 }
 .image-container img {
-    max-width: 870px;
+    /* max-width: 870px; */
     width: 100%;
-    height: max-content;
+    /* height: max-content; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .image-container {
