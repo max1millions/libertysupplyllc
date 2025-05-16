@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -7,19 +6,21 @@ body {
 }
 h1 {
     font-size: 3rem;
-     
+    margin: 0;
+    padding: 10px 0;
 }
 h2 {
     text-align: center;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.08em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
     position: relative;
-    z-index: 5;
     padding: 40px;
 }
 header {
@@ -27,57 +28,41 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 nav {
     background: #00509E;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 }
 nav a {
     color: white;
     text-decoration: none;
     padding: 0 15px;
     font-weight: bold;
-    cursor: pointer;
+    display: inline-block;
+    margin: 5px 10px;
 }
 nav a:hover {
     color: #e6e6e6;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 section {
-    padding: 20px;
+    padding: 25px;
     background: white;
-    margin: 20px 0;
+    margin: 25px 0;
     border-radius: 5px;
-    transition: transform 0.8s ease-in-out;
-}
-section:hover {
-    transform: scale(1.02);
-}
-.download-button {
-    display: flex;
-    padding: 10px 20px;
-    background-color: #00509E;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background 0.3s ease;
-    justify-content: center;
-    align-items: center;
-}
-.download-button:hover {
-    background-color: #003366;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #00274D;
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
 .services, .compliance {
     display: flex;
@@ -91,24 +76,13 @@ footer {
     margin: 10px;
     border-radius: 5px;
     text-align: center;
-    transition: background 0.7s;
 }
 .service-item:hover, .client-item:hover {
     background: #d1d1d1;
 }
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease-out, transform 0.9s ease-out;
-}
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 .image-container img {
     max-width: 100%;
-    /* width: 100%; */
-    /* height: max-content; */
+    height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .image-container {
@@ -117,6 +91,7 @@ footer {
     align-items: normal;
     position: relative;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 .image-certifications {
     display: inline-block;
@@ -147,12 +122,12 @@ footer {
     text-decoration: underline;
 }
 header h1 a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color from parent */
-    cursor: pointer; /* Show clickable cursor */
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 header h1 a:hover {
-    opacity: 0.8; /* Slight fade effect on hover */
+    opacity: 0.8;
 }
 .pre-text {
     white-space: pre;
@@ -163,19 +138,93 @@ header h1 a:hover {
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: normal;
 }
-@media print {
-    body {
-        background-color: white;
-        color: black;
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 40%;
+}
+.float-right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 40%;
+}
+
+.qms-button {
+    display: inline-block;
+    background-color: #00509E;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 24px;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.qms-button:hover {
+    background-color: #00274D;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.qms-button i {
+    font-style: italic;
+}
+
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 40em) {
+    .container {
+        width: 95%;
+        padding: 20px 10px;
     }
-    img {display: none;}
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    nav {
+        padding: 10px 5px;
+    }
+    nav a {
+        padding: 8px 12px;
+        margin: 5px;
+        font-size: 1.1rem;
+        display: inline-block;
+    }
+    section {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    .service-item, .client-item {
+        flex: 1 1 100%;
+    }
+    .float-left, .float-right {
+        float: none;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
     .image-container {
-        display: none;
+        margin-bottom: 20px;
     }
-    header, footer, nav {
-        display: none;
-    }
-    .download-button {
-        display: none;
+    footer {
+        padding: 15px;
     }
 }

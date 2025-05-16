@@ -1,0 +1,75 @@
+.feature-section {
+    margin: 40px auto;
+    position: relative;
+    max-width: 800px;
+}
+
+.feature-section h3 {
+    color: #00274D;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.comparison-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.comparison-table th {
+    background-color: #00509E;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+.comparison-table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.feature-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    max-width: 800px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+.student-choice-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 40em) {
+    .feature-section {
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px 5px;
+        font-size: 0.9rem;
+    }
+    
+    .feature-details {
+        padding: 15px;
+    }
+    
+    .student-choice-container {
+        padding: 0 10px;
+    }
+}
