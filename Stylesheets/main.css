@@ -99,6 +99,12 @@ footer {
     height: auto;
     margin-right: 5px;
 }
+.image-certifications2 {
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    margin-right: 50px;
+}
 .contact-info {
     background: #00509E;
     color: white;
