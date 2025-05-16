@@ -72,4 +72,64 @@ table, th, td {
     .student-choice-container {
         padding: 0 10px;
     }
+    
+    /* Improved table styles for mobile devices */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+    
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    
+    th, td {
+        padding: 8px 5px;
+    }
+    
+    th {
+        background-color: #00509E;
+        color: white;
+    }
+}
+
+/* Responsive tables with stacked layout for very small screens */
+@media screen and (max-width: 500px) {
+    table.responsive {
+        display: block;
+        width: 100%;
+    }
+    
+    table.responsive thead {
+        display: none;
+    }
+    
+    table.responsive tbody tr {
+        margin-bottom: 15px;
+        display: block;
+        border: 1px solid #ddd;
+    }
+    
+    table.responsive tbody td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px dotted #ccc;
+        border-left: none;
+        border-right: none;
+        white-space: normal;
+    }
+    
+    table.responsive tbody td:last-child {
+        border-bottom: none;
+    }
+    
+    table.responsive tbody td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        color: #00274D;
+    }
 }
